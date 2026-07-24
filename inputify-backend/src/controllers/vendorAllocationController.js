@@ -74,7 +74,7 @@ exports.addVendor = async (req, res) => {
     //----------------------------------------------------
     // Create Allocation
     //----------------------------------------------------
-    console.log("Vendor:", vendor);
+    // console.log("Vendor:", vendor);
 
     const { data: vendor } = await supabase
   .from("vendors")

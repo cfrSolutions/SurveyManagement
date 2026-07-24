@@ -83,20 +83,20 @@ process.env.CADA_SECRET || "INPUTIFY_CADA_SECRET";
 
 exports.generateCada = (payload) => {
 
-    console.log("GENERATE SECRET:", SECRET);
+    console.log("GENERATE SECRET:", process.env.CADA_SECRET);
 
 const token = jwt.sign(payload, SECRET, {
     expiresIn: "10y"
 });
 
-console.log("TOKEN:", token);
+ console.log("GENERATED TOKEN:", token);
 
 return token;
 
 };
 
 exports.verifyCada = (cada) => {
-console.log("VERIFY SECRET:", SECRET);
+console.log("VERIFY SECRET:",  process.env.CADA_SECRET);
 console.log("VERIFY TOKEN:", cada);
 
     return jwt.verify(
