@@ -1,0 +1,28 @@
+module.exports = {
+  table: "vendors",
+
+  fields: [
+    "id",
+    "company_name",
+    "parent_company",
+    "display_name",
+    "email",
+    "phone",
+    "secondary_email",
+    "secondary_phone",
+    "completion_url",
+    "disqualify_url",
+    "quota_full_url",
+    "quota_url",
+    "country",
+    "state",
+    "city",
+    "address1",
+    "address2",
+    "address3",
+    "zipcode",
+    "notes",
+    "is_active",
+    "created_at",
+  ],
+};

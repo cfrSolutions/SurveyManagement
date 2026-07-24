@@ -1,0 +1,94 @@
+:root{
+
+  /* =========================
+     PRIMARY BRAND (ONLY ONE)
+  ========================= */
+
+  --primary:#6D28D9;
+  --primary-hover:#5B21B6;
+  --primary-light:#8B5CF6;
+  --primary-soft:#F5F3FF;
+
+  /* =========================
+     ACCENT (KEEP SEPARATE)
+  ========================= */
+
+  --accent:#FF7A00;
+  --accent-hover:#F97316;
+  --accent-soft:#FFF7ED;
+
+  /* =========================
+     BACKGROUNDS (CLEAN UI)
+  ========================= */
+
+  --bg:#F8FAFC;
+  --bg-soft:#FFFFFF;
+  --bg-muted:#F1F5F9;
+  --bg-card:#FFFFFF;
+
+  /* =========================
+     TEXT SYSTEM
+  ========================= */
+
+  --text:#0F172A;
+  --text-secondary:#334155;
+  --text-light:#64748B;
+  --text-muted:#94A3B8;
+
+  /* =========================
+     BORDERS (VERY IMPORTANT)
+  ========================= */
+
+  --border:#E2E8F0;
+  --border-light:#F1F5F9;
+  --border-focus:#6D28D9;
+
+  /* =========================
+     STATUS COLORS
+  ========================= */
+
+  --success:#10B981;
+  --warning:#F59E0B;
+  --danger:#EF4444;
+  --info:#3B82F6;
+
+  /* =========================
+     SHADOW SYSTEM (MODERN FLAT)
+  ========================= */
+
+  --shadow-sm:0 1px 2px rgba(15,23,42,.05);
+  --shadow-md:0 6px 16px rgba(15,23,42,.08);
+  --shadow-lg:0 16px 40px rgba(15,23,42,.10);
+
+  /* =========================
+     GLASS (REDUCED - OPTIONAL ONLY)
+  ========================= */
+
+  --glass-bg:rgba(255,255,255,.85);
+  --glass-border:#E2E8F0;
+  --glass-blur:10px;
+
+  /* =========================
+     RADIUS (MODERN SaaS STYLE)
+  ========================= */
+
+  --radius-sm:6px;
+  --radius-md:10px;
+  --radius-lg:14px;
+  --radius-xl:18px;
+
+  /* =========================
+     LAYOUT SYSTEM
+  ========================= */
+
+  --sidebar-width:260px;
+  --topbar-height:72px;
+
+  /* =========================
+     ANIMATION
+  ========================= */
+
+  --transition-fast:all .15s ease;
+  --transition:all .25s ease;
+  --transition-slow:all .35s ease;
+}

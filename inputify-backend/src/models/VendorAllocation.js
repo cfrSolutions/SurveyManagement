@@ -1,0 +1,17 @@
+export const VendorAllocationModel = {
+  id: null,
+  project_id: null,
+  vendor_id: null,
+  vendor_contact_id: null,
+  cpi: 0,
+  quota: 0,
+  completes: 0,
+  max_completes: 0,
+  max_redirects: 0,
+  completion_url: "",
+  disqualify_url: "",
+  quota_url: "",
+  notes: "",
+  status: "",
+  created_at: null,
+};

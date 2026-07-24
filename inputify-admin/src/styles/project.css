@@ -1,0 +1,168 @@
+.project-page {
+  width: 100%;
+  padding: 10px;
+}
+
+/* KPI GRID */
+
+.project-kpis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+/* KPI CARD */
+
+.kpi-card {
+  background: #ffffff;
+  border: 1px solid #E5E7EB;
+  border-radius: 14px;
+  padding: 18px;
+
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+  transition: all 0.2s ease;
+}
+
+.kpi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.kpi-card span {
+  font-size: 12px;
+  color: #6B7280;
+  text-transform: uppercase;
+}
+
+.kpi-card h2 {
+  margin-top: 8px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* FORM CARD (IMPORTANT FIX) */
+
+.project-card {
+  background: #ffffff;
+  border: 1px solid #E5E7EB;
+  border-radius: 16px;
+
+  padding: 22px;
+  margin-bottom: 20px;
+
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+
+/* TITLE */
+
+.project-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #111827;
+}
+
+/* GRID */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+/* LABEL */
+
+.project-card label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6B7280;
+}
+
+/* INPUT (IMPORTANT FIX FOR VISIBILITY) */
+
+.project-card input,
+.project-card select,
+.project-card textarea {
+  width: 100%;
+  padding: 10px 12px;
+
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+
+  outline: none;
+  font-size: 14px;
+  background: #fff;
+
+  transition: all 0.2s ease;
+}
+
+.project-card input:focus,
+.project-card select:focus,
+.project-card textarea:focus {
+  border-color: #FF7A00;
+  box-shadow: 0 0 0 3px rgba(255,122,0,0.12);
+}
+
+/* SWITCH GRID */
+
+.switch-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+/* ACTIONS */
+
+.project-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+/* BUTTONS */
+
+.save-btn {
+  background: #FF7A00;
+  color: white;
+
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cancel-btn {
+  background: #fff;
+  border: 1px solid #E5E7EB;
+
+  padding: 12px 20px;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+  .project-kpis {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-kpis,
+  .project-grid,
+  .switch-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-actions {
+    flex-direction: column;
+  }
+}

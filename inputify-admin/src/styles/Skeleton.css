@@ -1,0 +1,21 @@
+.skeleton {
+ height: 20px;
+ border-radius: 8px;
+ background: linear-gradient(
+  90deg,
+  #f3f4f6,
+  #e5e7eb,
+  #f3f4f6
+ );
+ background-size: 200%;
+ animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+ from {
+  background-position: 200%;
+ }
+ to {
+  background-position: -200%;
+ }
+}

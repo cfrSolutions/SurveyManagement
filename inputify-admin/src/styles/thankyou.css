@@ -1,0 +1,342 @@
+.thankyou-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:12px;
+
+}
+
+.thankyou-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.thankyou-table th{
+
+    text-align:left;
+
+    padding:16px;
+
+    background:#f7f7f7;
+
+}
+
+.thankyou-table td{
+
+    padding:16px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.badge{
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.vendor{
+
+    background:#EEF2FF;
+
+    color:#4338CA;
+
+}
+
+.inputify{
+
+    background:#ECFDF5;
+
+    color:#059669;
+
+}
+
+.edit-btn{
+
+    border:none;
+
+    background:#7C3AED;
+
+    color:white;
+
+    padding:8px 18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+.completion-mode{
+
+    display:flex;
+
+    gap:40px;
+
+    margin-top:20px;
+
+}
+
+.completion-mode label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+.tabs{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-bottom:25px;
+
+}
+
+.tab{
+
+    border:none;
+
+    padding:12px 24px;
+
+    border-radius:8px;
+
+    background:#f3f4f6;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.tab.active{
+
+    background:#7C3AED;
+
+    color:white;
+
+}
+
+.preview-card{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+}
+.preview-page{
+
+    min-height:100vh;
+
+    background:#EEF4FB;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px 20px;
+}
+
+.preview-window{
+
+    width:100%;
+
+    max-width:760px;
+
+    background:#fff;
+
+    border-radius:26px;
+
+    overflow:hidden;
+
+    box-shadow:0 25px 70px rgba(0,0,0,.12);
+}
+
+.preview-top{
+
+    height:8px;
+}
+
+.preview-content{
+
+    padding:55px;
+    text-align:center;
+}
+
+.preview-logo{
+
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    margin-bottom:15px;
+}
+
+.preview-icon{
+
+    width:110px;
+    height:110px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:60px;
+
+    margin-bottom:20px;
+}
+
+.preview-badge{
+
+    display:inline-block;
+
+    padding:10px 24px;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+}
+
+.preview-badge.completed{
+
+    background:#DCFCE7;
+    color:#166534;
+}
+
+.preview-badge.disqualified{
+
+    background:#FEE2E2;
+    color:#991B1B;
+}
+
+.preview-badge.quota_full{
+
+    background:#FEF3C7;
+    color:#92400E;
+}
+
+.preview-content h1{
+
+    font-size:46px;
+
+    margin:20px 0;
+}
+
+.preview-content p{
+
+    font-size:20px;
+
+    color:#64748B;
+
+    line-height:1.8;
+}
+
+.preview-info{
+
+    margin-top:45px;
+
+    background:#F8FAFC;
+
+    padding:28px;
+
+    border-radius:18px;
+
+    text-align:left;
+}
+
+.preview-footer{
+ margin-top:45px;
+
+    padding-top:25px;
+
+    border-top:1px solid #E5E7EB;
+
+    color:#6B7280;
+
+    text-align:center;
+}
+
+.preview-brand{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    margin-bottom:35px;
+}
+
+.preview-logo{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:contain;
+
+    margin-bottom:15px;
+}
+
+.preview-company-name{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    background:#F3F4F6;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    color:#374151;
+}
+
+.preview-company-name-text{
+
+    margin-top:12px;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#111827;
+}
