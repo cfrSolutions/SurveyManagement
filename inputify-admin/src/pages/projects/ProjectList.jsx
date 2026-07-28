@@ -60,6 +60,25 @@ function ProjectList() {
 
   );
 
+  const deleteProject = async (id) =>{
+    const confirmDelete = window.confirm(
+      "Are you sure you want to delete this project?"
+    );
+
+    if(!confirmDelete) return;
+    try{
+      await api.delete(`/projects/${id}`);
+      setProjects((prev)=>
+      prev.filter((project)=> project.id !== id)
+      );
+      alter("Project delete successfully");
+    }
+    catch(error){
+      console.log(error);
+      alter("Failed to delete project");
+    }
+  }
+
   return (
 
     <MainLayout>
@@ -204,12 +223,15 @@ function ProjectList() {
                     )}
                     {!isClient && (
                     <td>
-                      <button
-                        className="table-delete-btn"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        Delete
-                      </button>
+                     <button
+  className="table-delete-btn"
+  onClick={(e) => {
+    e.stopPropagation();
+    deleteProject(project.id);
+  }}
+>
+  Delete
+</button>
                     </td>
                     )}
 
