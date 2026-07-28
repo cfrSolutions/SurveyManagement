@@ -1,4 +1,4 @@
-.sidebar {
+/* .sidebar {
 
   width: 260px;
 
@@ -22,16 +22,26 @@
   border-right: 1px solid #E2E8F0;
 
   z-index: 100;
+} */
+
+.sidebar {
+    width: 270px;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: #fff;
+    border-right: 1px solid #e5e7eb;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    padding: 20px;
+
+    z-index: 100;
 }
-
-.sidebar > div {
-  flex: 1;
-  overflow-y: auto;
-  overflow-x: hidden;
-
-  padding: 24px 20px 16px;
-}
-
 
 /* Logo */
 
@@ -135,35 +145,25 @@
 /* Logout button */
 
 .logout-btn {
+    width: 100%;
+    margin-top: 30px;
 
-  width: 100%;
+    padding: 12px;
 
-  padding: 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
 
-  border: 1px solid #E2E8F0;
+    background: #fff;
+    color: #475569;
 
-  border-radius: 8px;
+    cursor: pointer;
 
-  background: #FFFFFF;
-
-  color: #475569;
-
-  cursor: pointer;
-
-  font-weight: 500;
-
-  transition: all .2s ease;
+    transition: .2s;
 }
 
 .logout-btn:hover {
-
-  background: #F8FAFC;
-
-  border-color: #CBD5E1;
-
-  color: #111827;
+    background: #f8fafc;
 }
-
 .sidebar-section{
     margin-top:32px;
 }
@@ -198,24 +198,20 @@
     font-weight:600;
 }
 
-.sidebar{
-    width:270px;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    background:#fff;
-    border-right:1px solid #e5e7eb;
+
+/* Chrome, Edge, Safari */
+.sidebar::-webkit-scrollbar {
+    width: 0;
+    display: none;
 }
 
-.sidebar > div::-webkit-scrollbar {
-  width: 6px;
+/* Firefox */
+.sidebar {
+    scrollbar-width: none;
 }
 
-.sidebar > div::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 20px;
+/* IE */
+.sidebar {
+    -ms-overflow-style: none;
 }
 
-.sidebar > div::-webkit-scrollbar-track {
-  background: transparent;
-}
