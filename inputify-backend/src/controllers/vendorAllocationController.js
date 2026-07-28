@@ -149,6 +149,8 @@ exports.addVendor = async (req, res) => {
 
     });
 
+    console.log("NEW CADA:", cada);
+
     //----------------------------------------------------
     // Save Tokens
     //----------------------------------------------------
@@ -163,6 +165,14 @@ exports.addVendor = async (req, res) => {
 
       })
       .eq("id", allocation.id);
+
+      const { data: check } = await supabase
+  .from("vendor_allocations")
+  .select("cada")
+  .eq("id", allocation.id)
+  .single();
+
+console.log("DB CADA:", check.cada);
 
     //----------------------------------------------------
     // Return Updated Allocation
