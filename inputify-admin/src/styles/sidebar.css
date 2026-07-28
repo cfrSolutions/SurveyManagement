@@ -24,6 +24,15 @@
   z-index: 100;
 }
 
+.sidebar > div {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  padding: 24px 20px 16px;
+}
+
+
 /* Logo */
 
 .sidebar-logo h1 {
@@ -142,6 +151,8 @@
   cursor: pointer;
 
   font-weight: 500;
+  flex-shrink: 0;
+  margin: 16px 20px 24px;
 
   transition: all .2s ease;
 }
@@ -196,4 +207,17 @@
     justify-content:space-between;
     background:#fff;
     border-right:1px solid #e5e7eb;
+}
+
+.sidebar > div::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar > div::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 20px;
+}
+
+.sidebar > div::-webkit-scrollbar-track {
+  background: transparent;
 }
